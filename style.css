@@ -1,0 +1,656 @@
+@font-face {
+    font-family: "default";
+    src: url("fonts/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "neon";
+    src: url("fonts/Neonballroom.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.neonText {
+    animation: flicker 10s infinite alternate;
+    color: rgb(213, 134, 224);
+}
+
+
+/* Flickering animation */
+
+@keyframes flicker {
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 5px rgb(82, 3, 104), 0 0 10px rgb(82, 3, 104), 0 0 15px rgb(82, 3, 104), 0 0 20px #280abd, 0 0 30px #280abd, -24px -10px 20px rgba(104, 17, 255, 0.379);
+    }
+}
+
+.body {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: "default";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url("icon/Colors14202_square_20220918_123808_287_51.jpg"); */
+    background-image: url("icon/Untitled design (10).png");
+    overflow-x: hidden;
+}
+
+.body-light {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: "default";
+    overflow-x: hidden;
+}
+
+.body2 {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: "default";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url("icon/Colors14202_square_20220918_123808_287_51.jpg"); */
+    background-image: url("icon/Untitled design (10).png");
+    overflow-x: hidden;
+}
+
+.ad {
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-attachment: fixed; */
+    background-image: url("icon/commercial.gif");
+}
+
+.body2-light {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: "default";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url("icon/Colors14202_square_20220918_123808_287_51.jpg"); */
+    background-image: url("icon/Untitled design (10).png");
+    overflow-x: hidden;
+}
+
+.tit {
+    color: #eeeeee;
+    border-radius: 20px;
+    border: solid #eeeeee 2px;
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+.tit-light {
+    color: rgb(53, 50, 50);
+    border-radius: 20px;
+    border: solid rgb(53, 50, 50) 2px;
+    margin-left: 10px;
+}
+
+.ico {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/sun.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.ico-light {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/moon.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.ico:hover {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/sun-black.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: flex;
+    cursor: pointer;
+    background-color: #eeeeee;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.ico-light:hover {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/moon-white.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: flex;
+    cursor: pointer;
+    background-color: rgb(53, 50, 50);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.link {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/li-dark.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link-light {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/li-light.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tw {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/tw-dark.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tw-light {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/tw-light.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ig {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/ig-dark.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ig-light {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/ig-light.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tit:hover {
+    color: rgb(53, 50, 50);
+    background-color: #eeeeee;
+    border: solid #eeeeee 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.tit-light:hover {
+    color: #eeeeee;
+    background-color: rgb(53, 50, 50);
+    border: solid rgb(53, 50, 50) 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    background-color: rgba(53, 50, 50, 0);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(65, 56, 56);
+}
+
+.header {
+    position: fixed;
+    top: -70px;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* background-color: rgb(53, 50, 50); */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: 2s;
+}
+
+.b1 {
+    padding: 10px;
+    background-color: #eeeeee;
+    color: rgb(53, 50, 50);
+    border: solid #eeeeee 1px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.b1:hover {
+    padding: 10px;
+    background-color: rgba(53, 50, 50, 0);
+    color: #eeeeee;
+    border: solid #eeeeee 1px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.b1-light {
+    padding: 10px;
+    background-color: rgb(53, 50, 50);
+    color: #eeeeee;
+    border: solid rgb(53, 50, 50) 1px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.b1-light:hover {
+    padding: 10px;
+    background-color: #eeeeee;
+    color: rgb(53, 50, 50);
+    border: solid rgb(53, 50, 50) 1px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.main {
+    margin-top: 80px;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.main1 {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-image: url("icon/commercial.gif"); */
+    margin-left: -100%;
+    transition: 2s;
+}
+
+.main1-light {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -100%;
+    /* background-image: url("icon/commercial.gif"); */
+    transition: 2s;
+}
+
+.news {
+    width: 100%;
+    /* margin-left: 20%; */
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.news1 {
+    width: 100%;
+    /* margin-left: 20%; */
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.nc:hover .bann {
+    transition: 0.5s;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.376);
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.bann {
+    transition: 0.5s;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.376);
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nc {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 5px 11px -2px rgba(0, 0, 0, 0.73);
+}
+
+.star {
+    transition: 5s;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 10%, rgba(233, 230, 230, 0.6671043417366946) 54%);
+}
+
+.main2 {
+    width: 100%;
+    height: 500px;
+    margin-right: 100%;
+    margin-left: 100%;
+    transition: 2s;
+    display: block;
+}
+
+.s {
+    width: 60%;
+    margin-left: 20%;
+    /* background-color: red; */
+    height: 0;
+    transition: 1s;
+}
+
+.csh {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/csh.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.csh-light {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/csh-dark.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.js {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/js-light.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.js-light {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/js-dark.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.py {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/py-light.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.disclaimer {
+    display: none !important;
+}
+
+.py-light {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("icon/py.svg");
+    margin-right: 5px;
+    margin-left: auto;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.inform {
+    display: none;
+}
+
+@media(max-width:600px) {
+    .ad {
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* background-attachment: fixed; */
+        background-image: url("icon/commercial.gif");
+    }
+    .s {
+        width: 90%;
+        margin-left: 5%;
+        /* background-color: red; */
+        height: 0;
+        transition: 1s;
+    }
+    .news1 {
+        width: 100%;
+        /* margin-left: 5%; */
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+    /* .news {
+        width: 90%;
+        margin-left: 5%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 10px;
+    } */
+    .bann {
+        transition: 0.5s;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.376);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .inform {
+        display: block;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.409);
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+}
