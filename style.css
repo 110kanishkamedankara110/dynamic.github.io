@@ -37,6 +37,43 @@ html {
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 50px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(255, 145, 77);
+    border-radius: 50px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 47, 47);
+    border-radius: 50px;
+}
+
+.proj {
+    background-color: transparent;
+    border: solid 1px black;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.proj:hover {
+    background-color: rgb(255, 145, 77);
+    border: solid 1px rgb(255, 145, 77);
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+    width: 80%;
+    cursor: pointer;
+    transition: 1s;
+}
+
 .body {
     margin: 0;
     background-color: #eeeeee;

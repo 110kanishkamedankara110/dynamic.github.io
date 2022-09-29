@@ -11,13 +11,13 @@ require "database.php";
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="icon/icon.svg" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    
 
-  
+
+
 </head>
 
 <body class="body2" onload="" id="bod2">
-<div id="loading" style="display:flex;
+    <div id="loading" style="display:flex;
 align-items: center;background-color: #eeeeee;
 justify-content: center;width: 100%;height: 100%;background-size: cover;background-repeat: no-repeat;background-position: center;position:fixed;top: 0;bottom:0;left: 0;right: 0;z-index:999999999;">
 
@@ -31,7 +31,7 @@ justify-content: center;width: 100%;height: 100%;background-size: cover;backgrou
     <?php
     require "header.php";
     ?>
-    
+
     <div class="main">
         <div class="main1" id="m1" style="text-align: center;height: fit-content;">
 
@@ -91,11 +91,14 @@ justify-content: center;width: 100%;height: 100%;background-size: cover;backgrou
                 <div id="ad" class="ad" style="background-image:url('icon/podlogo.jpg');border-radius:50%;width:200px;height:200px;display: inline-block;align-items: center;align-content: center;justify-content: center;justify-items: center;">
 
                 </div>
-                <div style="background-color: transparent;width: 100%;height:100%;overflow-y:hidden;" class="gif">
+                <div style="background-color: transparent;width: 100%;height:100%;overflow-y:hidden;transform: rotate(10deg);" class="gif">
 
                     <div class="gif" style="width:100%;height: fit-content;background-image: url('');padding: 10px;box-sizing: border-box;">
-                        <h3>Our Web Podcast Player Will Be </h3>
-                        <h3 style="font-family:pro;font-size: 50px;text-align: center;" id="oops"></h3>
+                        <!-- <h3>Our Web Podcast Player Will Be </h3>
+                        <h3 style="font-family:pro;font-size: 50px;text-align: center;" id="oops"></h3> -->
+                        <h3 style="margin: 0;text-align: center;font-family: neon;" class="neonText">Our Web Podcast Player Will Be</h3>
+                        <h3 style="font-size: 50px;margin: 0;text-align: center;font-family: neon;" class="neonText">Comming Soon</h3>
+
 
                     </div>
                 </div>
@@ -120,31 +123,31 @@ justify-content: center;width: 100%;height: 100%;background-size: cover;backgrou
 
     <script src="script.js"></script>
     <script>
-        letters();
+        // letters();
 
-        function letters() {
-            setInterval(letters2, 500);
-        }
-        c = 0;
+        // function letters() {
+        //     setInterval(letters2, 500);
+        // }
+        // c = 0;
 
-        function letters2() {
-            var text = "Comming Soon";
-            if (c <= text.length) {
-                document.getElementById("oops").innerHTML = text.substring(0, c);
+        // function letters2() {
+        //     var text = "Comming Soon";
+        //     if (c <= text.length) {
+        //         document.getElementById("oops").innerHTML = text.substring(0, c);
 
-                if (c == text.length) {
-                    c = 1;
-                } else {
-                    c = c + 1;
-                }
-            }
-
-
+        //         if (c == text.length) {
+        //             c = 1;
+        //         } else {
+        //             c = c + 1;
+        //         }
+        //     }
 
 
 
 
-        }
+
+
+        // }
     </script>
     <script>
         window.addEventListener('load', function() {

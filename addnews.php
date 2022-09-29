@@ -1,18 +1,20 @@
 <?php
 session_start();
 require "database.php";
-if (!isset($_SESSION["user"])) {
-?>
-    <script>
-        window.location = "admin.php";
-    </script>
-<?php
-}
+// if (!isset($_SESSION["user"])) {
+// ?>
+//     <script>
+//         window.location = "admin.php";
+//     </script>
+// <?php
+// }
 
 ?>
 Title : <input id="tit" type="text" />
 Description : <textarea id="des"></textarea>
 pic : <input type="file" id="pic" accept="image/*" />
+
+<h1 id="progressNumber"></h1>
 <button onclick="addNews()">Add</button>
 <table>
     <tr>
@@ -51,6 +53,7 @@ pic : <input type="file" id="pic" accept="image/*" />
 
 
         var r = new XMLHttpRequest();
+        r.upload.addEventListener("progress", uploadProgress, false);
         var f = new FormData();
         f.append("tit", tit);
         f.append("desc", desc);
@@ -63,10 +66,16 @@ pic : <input type="file" id="pic" accept="image/*" />
 
             }
         };
+       
         r.open("POST", "an.php", true);
         r.send(f);
     }
-
+    function uploadProgress(evt) {
+        if (evt.lengthComputable) {
+          var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+          document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
+        }
+    }
     function del(id, pic) {
 
         var r = new XMLHttpRequest();
