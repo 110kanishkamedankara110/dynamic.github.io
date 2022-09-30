@@ -45,7 +45,7 @@ justify-content: center;width: 100%;height: 100%;background-size: cover;backgrou
                     that vision. Our team is always striving to provide the most efficient service to our clients. We are
                     ambitious, courageous, inspired, and knowledgeable team to provide our maximum effort to our clients.
                     Our aim is to provide better service, inspire, and also give the best experience for our beloved clients.</p><br />
-                    <button class="proj" onclick="window.location='showProjects.php'"><h1>Our Projects</h1><p>Click to see our projects</p></button>
+                    <button class="proj" onclick="window.location='showProjects.php'"><h3 style="margin-bottom:0;">Our Projects</h3><p style="margin-top:2px;">Click to see our projects</p></button>
                 <div id="ad" class="ad">
 
                 </div>
@@ -98,7 +98,7 @@ justify-content: center;width: 100%;height: 100%;background-size: cover;backgrou
                             </div>
                         </div>
 
-
+                       
 
                     </div>
                 </div>
